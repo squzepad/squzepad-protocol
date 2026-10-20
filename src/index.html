@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Squzepad · token lineages on Solana</title>
+<meta name="description" content="Squzepad links each fresh Solana token to the one it grew from, so a single release can seed an entire family. A constantly refreshed board of the busiest tokens sits right here.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="@@THEME@@">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<meta property="og:site_name" content="Squzepad">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Squzepad · token lineages on Solana">
+<meta property="og:description" content="Seed one token, attach children beneath it, and let a family compound on Solana.">
+<meta property="og:image" content="https://squzepad.fun/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/boot.js"></script>
+</head>
+<body>
+<div id="progress" class="progress" aria-hidden="true"></div>
+<div class="mesh" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Squzepad home">
+      <img src="/img/logo-128.png" srcset="/img/logo-128.png 1x, /img/logo-384.png 3x" width="38" height="38" alt="">
+      <span class="brand-t">squzepad</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Sections">
+      <a href="#flow">Flow</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#board">Board</a>
+      <a href="#phases">Phases</a>
+      <a href="#status">Status</a>
+    </nav>
+    <div class="nav-right">
+      <span class="pill live hide-s" data-status="connecting"><i class="dot"></i><span class="pill-t">Linking</span></span>
+      @@LAUNCHER_NAV@@
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></button>
+      <div class="social" role="group" aria-label="Social">
+        @@SOCIAL_X@@
+        @@SOCIAL_GH@@
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="ca" id="ca" aria-label="Contract address">
+  <div class="ca-in">
+    <span class="ca-k">Contract</span>
+    @@CA@@
+  </div>
+</section>
+
+<main class="shell" id="main">
+  <section class="arrive" id="top">
+    <div class="arrive-copy" data-depth="0.12">
+      <p class="eyebrow" data-reveal>— Lineage-led tokens · built on Solana</p>
+      <h1 data-reveal>One seed.<br>A <span class="grad">lineage</span>.</h1>
+      <p class="lede" data-reveal>Squzepad ties each fresh release to the token it descends from, so every drop can feed what follows.</p>
+      <p class="sub" data-reveal>Begin with a single parent on pump.fun, attach children beneath it, and let the family compound across Solana.</p>
+    </div>
+
+    <div class="arrive-tree card spot" data-reveal data-reveal-delay="120">
+      <p class="tree-cap">Lineage sketch</p>
+      @@TREE@@
+      <p class="tree-foot"><b>One parent</b> · four children · eight grandchildren</p>
+    </div>
+
+    <nav class="arrive-actions" aria-label="Start here">
+      <a class="act card spot" href="#board" data-reveal>
+        <span class="act-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V9M10 18V5M16 18v-7M21 18H3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="act-b"><b>Scan the board</b><small>The ten busiest Solana tokens, refreshed every minute.</small></span>
+        <svg class="act-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      @@LAUNCHER_CARD@@
+      <a class="act card spot" href="#phases" data-reveal data-reveal-delay="140">
+        <span class="act-ic alt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM9 9h6M9 13h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="act-b"><b>Follow the plan</b><small>Four stages, from groundwork to a thriving community.</small></span>
+        <svg class="act-go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+
+    <ul class="arrive-trust" data-reveal>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Funds remain with you</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Lineage recorded on Solana itself</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Market numbers keep running around the clock</li>
+    </ul>
+
+    <div class="arrive-search" data-reveal>
+      <label for="filter">Chasing one token in particular? Trim the board.</label>
+      <div class="field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+        <input id="filter" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Token, symbol or address">
+      </div>
+    </div>
+  </section>
+
+  <section class="pulse card" aria-label="Market strip" data-reveal>
+    <div class="pulse-head"><span class="pill live" data-status="connecting"><i class="dot"></i><span class="pill-t">Linking</span></span><span class="pulse-t">Market pulse</span></div>
+    <div class="pulse-track"><div class="ticker" id="ticker-track"><span class="tick-wait">Fetching quotes…</span></div></div>
+  </section>
+
+  <section class="sec hw" id="flow">
+    <div class="section-head" data-reveal><div><h2>How a lineage grows</h2></div></div>
+    <div class="hw-grid">
+      <div class="card hw-diagram" data-reveal>
+        <p class="muted">Each fresh token hangs from an older one, so a family reads as a single connected structure instead of scattered releases.</p>
+        <svg class="diagram" viewBox="0 0 660 300" role="img" aria-label="A signer plants a seed token, which anchors a branch token; the branch can anchor a twig, and a fee share runs from branch back to seed.">
+          <path class="d-fee" d="M440 124 Q350 44 260 124"/>
+          <g class="d-pill"><rect x="290" y="46" width="120" height="30" rx="15"/><text x="350" y="66" text-anchor="middle">fee share</text></g>
+          <path class="d-flow" d="M112 175 H215"/>
+          <path class="d-flow" d="M305 175 H395"/>
+          <path class="d-flow soft" d="M485 175 H565"/>
+          <circle class="d-node plain" cx="80" cy="175" r="32"/><text class="d-t" x="80" y="180" text-anchor="middle">YOU</text>
+          <circle class="d-halo" cx="260" cy="175" r="62"/>
+          <circle class="d-node a" cx="260" cy="175" r="44"/><text class="d-t b" x="260" y="180" text-anchor="middle">SEED</text>
+          <circle class="d-halo b" cx="440" cy="175" r="62"/>
+          <circle class="d-node b" cx="440" cy="175" r="44"/><text class="d-t b" x="440" y="180" text-anchor="middle">BRANCH</text>
+          <circle class="d-node ghost" cx="600" cy="175" r="28"/><text class="d-t sm" x="600" y="179" text-anchor="middle">TWIG</text>
+          <text class="d-l" x="80" y="232" text-anchor="middle">signer</text>
+          <text class="d-l" x="260" y="248" text-anchor="middle">level zero</text>
+          <text class="d-l" x="440" y="248" text-anchor="middle">level one</text>
+          <text class="d-l" x="600" y="232" text-anchor="middle">further out</text>
+          <text class="d-m" x="160" y="162" text-anchor="middle">seeds</text>
+          <text class="d-m" x="350" y="162" text-anchor="middle">anchors</text>
+        </svg>
+        <ul class="legend"><li><i class="k a"></i>release path</li><li><i class="k b"></i>anchor link</li><li><i class="k c"></i>fee share</li></ul>
+      </div>
+      <ol class="steps">
+        <li class="card spot" data-reveal><span class="n">1</span><div><h3>Seed a parent</h3><p>Start with one token on pump.fun. It becomes the trunk that every later release hangs from.</p></div></li>
+        <li class="card spot" data-reveal data-reveal-delay="90"><span class="n">2</span><div><h3>Attach children</h3><p>Builders create fresh tokens beneath an existing one, tying each project back to where it began.</p></div></li>
+        <li class="card spot" data-reveal data-reveal-delay="180"><span class="n">3</span><div><h3>Share the upside</h3><p>Creator fees divide between Squzepad and the token above, and a portion of platform proceeds is set aside for $SQUZEPAD and locked, following published mechanics.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec numbers" id="numbers">
+    <div class="stats card" data-reveal>
+      <div class="stat spot"><span class="stat-k">Tokens tracked</span><b class="stat-v num" data-stat="count">—</b><small>Solana entries on the boosted list</small></div>
+      <div class="stat spot"><span class="stat-k">Board turnover</span><b class="stat-v num" data-stat="volume">—</b><small>Summed across the ten rows</small></div>
+      <div class="stat spot"><span class="stat-k">Board liquidity</span><b class="stat-v num" data-stat="liquidity">—</b><small>Pool liquidity summed across the ten rows</small></div>
+      <div class="stat spot"><span class="stat-k">Strongest mover</span><b class="stat-v num" data-stat="mover">—</b><small data-stat="mover-name">awaiting data</small></div>
+    </div>
+  </section>
+
+  <section class="sec board" id="board">
+    <div class="section-head" data-reveal>
+      <div><h2>Busiest on Solana</h2><p class="muted">Boosted listings, ordered by what changed hands across the past day.</p></div>
+      <div class="tabs" id="sort-tabs" role="tablist" aria-label="Sort the board">
+        <button type="button" role="tab" aria-selected="true" data-sort="volume">Volume</button>
+        <button type="button" role="tab" aria-selected="false" data-sort="liquidity">Liquidity</button>
+        <button type="button" role="tab" aria-selected="false" data-sort="movers">Movers</button>
+      </div>
+    </div>
+    <div class="trees card" data-reveal>
+      <div class="board-head" aria-hidden="true"><span>#</span><span>Token</span><span class="r">Price</span><span class="r">Swing</span><span class="r">Volume</span><span class="r">Liquidity</span><span></span></div>
+      <ul class="rows" id="board-list" aria-live="polite" aria-busy="true"></ul>
+      <p class="empty" id="board-empty" hidden>No token on the board fits that search.</p>
+      <p class="note" id="board-note" role="status" hidden></p>
+    </div>
+  </section>
+
+  <section class="sec phases" id="phases">
+    <div class="section-head" data-reveal><div><h2>Four phases</h2><p class="muted">Each stage builds on the one before it.</p></div></div>
+    <ol class="trees card ph-list" data-reveal>
+      <li class="ph spot"><span class="c-rank">01</span><div class="ph-b"><b>Foundation</b><span>Brand, site and the always-on Solana board.</span></div><span class="tag on">underway</span></li>
+      <li class="ph spot"><span class="c-rank">02</span><div class="ph-b"><b>Launcher</b><span>Add an offshoot beneath any seed in a single signed step.</span></div><span class="tag">planned</span></li>
+      <li class="ph spot"><span class="c-rank">03</span><div class="ph-b"><b>Lineage tools</b><span>A visual atlas of every lineage, with per-branch analytics.</span></div><span class="tag">planned</span></li>
+      <li class="ph spot"><span class="c-rank">04</span><div class="ph-b"><b>Ecosystem</b><span>Fee sharing in production and community-run growth.</span></div><span class="tag">planned</span></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="footer" id="status">
+  <div class="footer-in">
+    <div class="foot-brand">
+      <a class="brand" href="#top" aria-label="Back to top"><img src="/img/logo-128.png" width="38" height="38" alt=""><span class="brand-t">squzepad</span></a>
+      <p>Token lineages on Solana. Seed a parent, attach children, raise a family.</p>
+      <p class="fine">Quotes by DexScreener. None of this is financial advice.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer"><h4>Jump to</h4><a href="#flow">Flow</a><a href="#numbers">Numbers</a><a href="#board">Board</a><a href="#phases">Phases</a></nav>
+    <div class="foot-status"><h4>Status</h4>
+      <ul class="chips">
+        @@CHIPS@@
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="application/json" id="register-public">@@REGISTER_JSON@@</script>
+<script type="module" src="/js/app.mjs"></script>
+</body>
+</html>

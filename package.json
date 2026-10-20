@@ -1,0 +1,18 @@
+{
+  "name": "squzepad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Squzepad static site",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0"
+  }
+}
